@@ -1,0 +1,4 @@
+inherit_from: https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 2.4
