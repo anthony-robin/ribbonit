@@ -1,36 +1,132 @@
 # Ribbonit
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ribbonit`. To experiment with that code, run `bin/console` for an interactive prompt.
+**Ribbonit** displays an elegant ribbon to the corner of the page displaying useful information about the application: **Rails environment**, **Rails version**, **Ruby version**.
 
-TODO: Delete this and the text above, and describe your gem
+It is completely inspired from the Github 'fork me' ribbon.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
+# Gemfile
 gem 'ribbonit'
 ```
 
 And then execute:
 
-    $ bundle
+```shell
+$ bundle
+```
 
 Or install it yourself as:
-
-    $ gem install ribbonit
+```shell
+$ gem install ribbonit
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+1) Run initializer
+```shell
+$ bin/rails g ribbonit:install
+```
+This will create a `ribbonit.rb` file in `config/initializers`
 
-## Development
+2) Import assets
+```sass
+// application.sass
+@import ribbon
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+3) Call ribbon in layout
+```slim
+/ application.slim
+...
+body
+  = ribbonit
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## Options
+You can customize some options through the initializer. Here are the defaults options:
+
+```ruby
+# config/initializers/ribbonit.rb
+
+display_rails_version = true
+display_ruby_version = true
+
+hide_for_small = true # Display ribbon in small devices ?
+position = 'top-left' # top-right, bottom-left, bottom-right
+
+# Available colors:
+# orange, blue, green, red, purple, black, white
+themes = {
+  development: 'black',
+  staging: 'blue'
+}
+
+# Sometimes, people use another name for this environment
+staging_name = 'staging'
+```
+
+## Screenshots
+### Colors
+<table>
+<tr>
+  <td><img src="vendor/assets/images/colors/orange.png" width="100"></td>
+  <td><img src="vendor/assets/images/colors/blue.png" width="100"></td>
+  <td><img src="vendor/assets/images/colors/green.png" width="100"></td>
+  <td><img src="vendor/assets/images/colors/red.png" width="100"></td>
+</tr>
+<tr>
+  <td>Orange</td>
+  <td>Blue</td>
+  <td>Green</td>
+  <td>Red</td>
+</tr>
+<tr>
+  <td><img src="vendor/assets/images/colors/purple.png" width="100"></td>
+  <td><img src="vendor/assets/images/colors/black.png" width="100"></td>
+  <td><img src="vendor/assets/images/colors/white.png" width="100"></td>
+</tr>
+<tr>
+  <td>Purple</td>
+  <td>Black</td>
+  <td>White</td>
+</tr>
+</table>
+
+### Positions
+<table>
+<tr>
+  <td><img src="vendor/assets/images/colors/blue.png" width="100"></td>
+  <td><img src="vendor/assets/images/positions/top-right.png" width="100"></td>
+  <td><img src="vendor/assets/images/positions/bottom-right.png" width="100"></td>
+  <td><img src="vendor/assets/images/positions/bottom-left.png" width="100"></td>
+</tr>
+<tr>
+  <td>Top/Left</td>
+  <td>Top/Right</td>
+  <td>Bottom/Right</td>
+  <td>Bottom/Left</td>
+</tr>
+</table>
+
+### Environments
+<table>
+<tr>
+  <td><img src="vendor/assets/images/colors/purple.png" width="100"></td>
+  <td><img src="vendor/assets/images/environments/staging.png" width="100"></td>
+</tr>
+<tr>
+  <td>Development</td>
+  <td>Staging</td>
+</tr>
+</table>
 
 ## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ribbonit.
-
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
