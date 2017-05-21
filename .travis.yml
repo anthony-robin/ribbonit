@@ -10,6 +10,7 @@ before_install:
   - gem install bundler -v 1.14.6
 
 script:
+  - bundle exec rake test
   - bin/rubocop
 
 notifications:
