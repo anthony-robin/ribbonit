@@ -5,9 +5,10 @@
 It is completely inspired from the Github 'fork me' ribbon.
 
 [![Gem Version](https://badge.fury.io/rb/ribbonit.svg)](https://rubygems.org/gems/ribbonit)
-![Travis CI](https://travis-ci.org/anthony-robin/Ribbonit.svg?branch=master)
+[![Travis CI](https://travis-ci.org/anthony-robin/Ribbonit.svg?branch=master)](https://travis-ci.org/anthony-robin/Ribbonit)
+[![Codacy Badge Grade](https://api.codacy.com/project/badge/Grade/521429a8cf91432aba574c69f1385aa2)](https://www.codacy.com/app/anthony-robin/Ribbonit)
+[![Codacy Badge Coverage](https://api.codacy.com/project/badge/Coverage/521429a8cf91432aba574c69f1385aa2)](https://www.codacy.com/app/anthony-robin/Ribbonit)
 [![Dependency Status](https://gemnasium.com/badges/github.com/anthony-robin/Ribbonit.svg)](https://gemnasium.com/github.com/anthony-robin/Ribbonit)
-
 
 ## Installation
 

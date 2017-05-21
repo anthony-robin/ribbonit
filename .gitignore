@@ -10,3 +10,4 @@
 
 .rubocop-http*
 !bin
+coverage
