@@ -4,6 +4,7 @@
 
 It is completely inspired from the Github 'fork me' ribbon.
 
+[![Gem Version](https://badge.fury.io/rb/ribbonit.svg)](https://rubygems.org/gems/ribbonit)
 ![Travis CI](https://travis-ci.org/anthony-robin/Ribbonit.svg?branch=master)
 
 ## Installation

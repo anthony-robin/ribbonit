@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Display Ribbon with Rails env'
   spec.description   = 'Display an elegant Github like ribbon to your Rails application showing environment informations (Rails environment, Ruby version, Rails version, ...)'
-  spec.homepage      = 'https://github.com/anthony-robin'
+  spec.homepage      = 'https://github.com/anthony-robin/ribbonit'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = 'exe'
