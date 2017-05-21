@@ -4,6 +4,7 @@
 
 It is completely inspired from the Github 'fork me' ribbon.
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/521429a8cf91432aba574c69f1385aa2)](https://www.codacy.com/app/anthony-robin/Ribbonit?utm_source=github.com&utm_medium=referral&utm_content=anthony-robin/Ribbonit&utm_campaign=badger)
 [![Gem Version](https://badge.fury.io/rb/ribbonit.svg)](https://rubygems.org/gems/ribbonit)
 ![Travis CI](https://travis-ci.org/anthony-robin/Ribbonit.svg?branch=master)
 [![Dependency Status](https://gemnasium.com/badges/github.com/anthony-robin/Ribbonit.svg)](https://gemnasium.com/github.com/anthony-robin/Ribbonit)
