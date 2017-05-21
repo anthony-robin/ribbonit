@@ -1,5 +1,6 @@
 require 'ribbonit/view_helpers'
 
+# rubocop:disable ClassAndModuleChildren
 module Ribbonit
   module Rails
     class Engine < ::Rails::Engine
