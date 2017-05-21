@@ -4,6 +4,8 @@
 
 It is completely inspired from the Github 'fork me' ribbon.
 
+![Travis CI](https://travis-ci.org/anthony-robin/Ribbonit.svg?branch=master)
+
 ## Installation
 
 Add this line to your application's Gemfile:

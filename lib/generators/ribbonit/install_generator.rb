@@ -1,3 +1,4 @@
+# rubocop:disable ClassAndModuleChildren
 module Ribbonit
   module Generators
     class InstallGenerator < ::Rails::Generators::Base
