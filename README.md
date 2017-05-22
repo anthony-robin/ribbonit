@@ -58,8 +58,7 @@ You can customize some options through the initializer. Here are the defaults op
 ```ruby
 # config/initializers/ribbonit.rb
 
-display_rails_version = true
-display_ruby_version = true
+config.infos_to_display = %i[rails_version ruby_version]
 
 hide_for_small = true # Display ribbon in small devices ?
 position = 'top-left' # top-right, bottom-left, bottom-right
@@ -83,19 +82,15 @@ staging_name = 'staging'
   <td><img src="vendor/assets/images/colors/blue.png" width="100"></td>
   <td><img src="vendor/assets/images/colors/green.png" width="100"></td>
   <td><img src="vendor/assets/images/colors/red.png" width="100"></td>
+  <td><img src="vendor/assets/images/colors/purple.png" width="100"></td>
+  <td><img src="vendor/assets/images/colors/black.png" width="100"></td>
+  <td><img src="vendor/assets/images/colors/white.png" width="100"></td>
 </tr>
 <tr>
   <td>Orange</td>
   <td>Blue</td>
   <td>Green</td>
   <td>Red</td>
-</tr>
-<tr>
-  <td><img src="vendor/assets/images/colors/purple.png" width="100"></td>
-  <td><img src="vendor/assets/images/colors/black.png" width="100"></td>
-  <td><img src="vendor/assets/images/colors/white.png" width="100"></td>
-</tr>
-<tr>
   <td>Purple</td>
   <td>Black</td>
   <td>White</td>

@@ -13,13 +13,14 @@ end
 class Ribbonit::Configuration
   include ActiveSupport::Configurable
 
-  config_accessor(:display_rails_version) { true }
-  config_accessor(:display_ruby_version) { true }
+  config_accessor(:infos_to_display) do
+    %i[rails_version ruby_version]
+  end
   config_accessor(:hide_for_small) { true }
   config_accessor(:position) { 'top-left' }
   config_accessor(:themes) do
     {
-      development: 'orange',
+      development: 'black',
       staging: 'blue'
     }
   end

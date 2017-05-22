@@ -7,11 +7,11 @@
     <span class="env"><%= Rails.env.capitalize %></span>
 
     <span class="version">
-      <% if config.display_rails_version %>
+      <% if config.infos_to_display.include?(:rails_version) %>
         Rails: <strong><%= Rails.version %></strong>
       <% end %>
 
-      <% if config.display_ruby_version %>
+      <% if config.infos_to_display.include?(:ruby_version) %>
         Ruby: <strong><%= RUBY_VERSION %></strong>
       <% end %>
     </span>

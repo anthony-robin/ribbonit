@@ -2,8 +2,11 @@ Ribbonit.configure do |config|
   ###
   # Displayed informations
   #
-  config.display_rails_version = true
-  config.display_ruby_version = true
+  # Available options:
+  # - rails_version: Version of Ruby on Rails
+  # - ruby_version: Version of Ruby
+  #
+  config.infos_to_display = %i[rails_version ruby_version]
 
   ###
   # Display on small devices ?
@@ -11,14 +14,18 @@ Ribbonit.configure do |config|
   config.hide_for_small = true
 
   ###
-  # Position - available positions are:
-  # 'top-left', 'top-right', 'bottom-left', 'bottom-right'
+  # Position
+  #
+  # Available options:
+  # top-left, top-right, bottom-left, bottom-right
   #
   config.position = 'top-left'
 
   ###
-  # Themes - available options are:
-  # 'orange', 'blue', 'green', 'red', 'purple', 'black', 'white'
+  # Themes
+  #
+  # Available options:
+  # orange, blue, green, red, purple, black, white
   #
   config.themes = {
     development: 'black',
