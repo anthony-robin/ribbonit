@@ -62,6 +62,7 @@ config.infos_to_display = %i[rails_version ruby_version]
 
 hide_for_small = true # Display ribbon in small devices ?
 position = 'top-left' # top-right, bottom-left, bottom-right
+sticky = true # stick to page corner ?
 
 # Available colors:
 # orange, blue, green, red, purple, black, white

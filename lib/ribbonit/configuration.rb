@@ -18,6 +18,7 @@ class Ribbonit::Configuration
   end
   config_accessor(:hide_for_small) { true }
   config_accessor(:position) { 'top-left' }
+  config_accessor(:sticky) { true }
   config_accessor(:themes) do
     {
       development: 'black',
