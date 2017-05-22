@@ -22,6 +22,11 @@ Ribbonit.configure do |config|
   config.position = 'top-left'
 
   ###
+  # Stick ribbon to page on scroll ?
+  #
+  config.sticky = true
+
+  ###
   # Themes
   #
   # Available options:
