@@ -58,7 +58,10 @@ You can customize some options through the initializer. Here are the defaults op
 ```ruby
 # config/initializers/ribbonit.rb
 
-config.infos_to_display = %i[rails_version ruby_version]
+# rails_version: Version of Ruby on Rails
+# ruby_version: Version of Ruby
+# git_branch: Current git branch (only displayed in development)
+config.infos_to_display = %i[rails_version ruby_version git_branch]
 
 hide_for_small = true # Display ribbon in small devices ?
 position = 'top-left' # top-right, bottom-left, bottom-right
@@ -123,6 +126,16 @@ staging_name = 'staging'
 <tr>
   <td>Development</td>
   <td>Staging</td>
+</tr>
+</table>
+
+### Additional informations
+<table>
+<tr>
+  <td><img src="vendor/assets/images/git/branch.png" width="100"></td>
+</tr>
+<tr>
+  <td>Git branch</td>
 </tr>
 </table>
 

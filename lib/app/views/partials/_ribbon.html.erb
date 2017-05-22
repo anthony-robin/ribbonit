@@ -2,7 +2,7 @@
 
 <% if Rails.env.development? || Rails.env.send("#{config.staging_name}?") %>
 
-<div id="ribbon" class="ribbon <%= config.position %> <%= config.hide_for_small ? 'hide-for-small' : '' %> <%= config.sticky ? 'sticky' : '' %>">
+<div id="ribbon" class="ribbon <%= config.position %> <%= config.hide_for_small ? 'hide-for-small' : '' %> <%= config.sticky ? 'sticky' : '' %> line-<%= line_count %>">
   <div class="ribbon-container <%= config.themes[Rails.env.to_sym] %>">
     <span class="env"><%= Rails.env.capitalize %></span>
 
@@ -15,6 +15,12 @@
         Ruby: <strong><%= RUBY_VERSION %></strong>
       <% end %>
     </span>
+
+    <% if config.infos_to_display.include?(:git_branch) && Rails.env.development? %>
+      <span class="git">
+        Branch: <strong><%= branch_name %></strong>
+      </span>
+    <% end %>
   </div>
 </div>
 
