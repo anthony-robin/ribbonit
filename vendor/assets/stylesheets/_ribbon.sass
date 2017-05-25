@@ -50,6 +50,23 @@ $left: -60px
       left: inherit
       transform: rotate(-45deg)
 
+  // Ribbon size depending of displayed options
+  &.line-3
+    width: $ribbon_width + 15px
+    height: $ribbon_height + 15px
+    &.top-left
+      top: -5px
+      left: -5px
+    &.top-right
+      top: -5px
+      right: -5px
+    &.bottom-left
+      bottom: -5px
+      left: -5px
+    &.bottom-right
+      right: - 5px
+      bottom: - 5px
+
   // Container
   .ribbon-container
     position: absolute
@@ -98,10 +115,10 @@ $left: -60px
 
     // Displayed informations
     .env
-      margin-bottom: 0
+      display: block
       text-transform: uppercase
 
-    .version
+    .version, .git
       display: block
       font-size: 11px
 

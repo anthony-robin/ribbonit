@@ -5,8 +5,9 @@ Ribbonit.configure do |config|
   # Available options:
   # - rails_version: Version of Ruby on Rails
   # - ruby_version: Version of Ruby
+  # - git_branch: Current git branch (only displayed in development)
   #
-  config.infos_to_display = %i[rails_version ruby_version]
+  config.infos_to_display = %i[rails_version ruby_version git_branch]
 
   ###
   # Display on small devices ?
