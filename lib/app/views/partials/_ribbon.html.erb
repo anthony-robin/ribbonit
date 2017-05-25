@@ -4,22 +4,12 @@
 
 <div id="ribbon" class="ribbon <%= config.position %> <%= config.hide_for_small ? 'hide-for-small' : '' %> <%= config.sticky ? 'sticky' : '' %> line-<%= line_count %>">
   <div class="ribbon-container <%= config.themes[Rails.env.to_sym] %>">
-    <span class="env"><%= Rails.env.capitalize %></span>
-
-    <span class="version">
-      <% if config.infos_to_display.include?(:rails_version) %>
-        Rails: <strong><%= Rails.version %></strong>
+    <% if config.root_link %>
+      <%= link_to root_url do %>
+        <%= render '/lines', config: config %>
       <% end %>
-
-      <% if config.infos_to_display.include?(:ruby_version) %>
-        Ruby: <strong><%= RUBY_VERSION %></strong>
-      <% end %>
-    </span>
-
-    <% if config.infos_to_display.include?(:git_branch) && Rails.env.development? %>
-      <span class="git">
-        Branch: <strong><%= branch_name %></strong>
-      </span>
+    <% else %>
+      <%= render '/lines', config: config %>
     <% end %>
   </div>
 </div>

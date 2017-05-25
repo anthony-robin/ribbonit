@@ -1,0 +1,17 @@
+<span class="env"><%= Rails.env.capitalize %></span>
+
+<span class="version">
+  <% if config.infos_to_display.include?(:rails_version) %>
+    Rails: <strong><%= Rails.version %></strong>
+  <% end %>
+
+  <% if config.infos_to_display.include?(:ruby_version) %>
+    Ruby: <strong><%= RUBY_VERSION %></strong>
+  <% end %>
+</span>
+
+<% if config.infos_to_display.include?(:git_branch) && Rails.env.development? %>
+  <span class="git">
+    Branch: <strong><%= branch_name %></strong>
+  </span>
+<% end %>

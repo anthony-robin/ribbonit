@@ -63,6 +63,8 @@ You can customize some options through the initializer. Here are the defaults op
 # git_branch: Current git branch (only displayed in development)
 config.infos_to_display = %i[rails_version ruby_version git_branch]
 
+config.root_link = false # Wrap ribbon with root_url link ?
+
 hide_for_small = true # Display ribbon in small devices ?
 position = 'top-left' # top-right, bottom-left, bottom-right
 sticky = true # stick to page corner ?

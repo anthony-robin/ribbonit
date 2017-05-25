@@ -10,6 +10,11 @@ Ribbonit.configure do |config|
   config.infos_to_display = %i[rails_version ruby_version git_branch]
 
   ###
+  # Wrap ribbon with link that goes to root_url ?
+  #
+  config.root_link = false
+
+  ###
   # Display on small devices ?
   #
   config.hide_for_small = true
