@@ -1,8 +1,7 @@
 # Change Log
 
-## [Unreleased](https://github.com/anthony-robin/Ribbonit/tree/HEAD)
-
-[Full Changelog](https://github.com/anthony-robin/Ribbonit/compare/v0.1.0...HEAD)
+## [v0.2.0](https://github.com/anthony-robin/Ribbonit/tree/v0.2.0) (2017-05-28)
+[Full Changelog](https://github.com/anthony-robin/Ribbonit/compare/v0.1.0...v0.2.0)
 
 **Implemented enhancements:**
 
