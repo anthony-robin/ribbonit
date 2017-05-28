@@ -6,6 +6,9 @@
 
 **Implemented enhancements:**
 
+- REFACTOR style using BEM syntax [\#19](https://github.com/anthony-robin/Ribbonit/pull/19) ([anthony-robin](https://github.com/anthony-robin))
+- ADD 'root\_link' option that wraps ribbon [\#18](https://github.com/anthony-robin/Ribbonit/pull/18) ([anthony-robin](https://github.com/anthony-robin))
+- ADD Changelog file [\#17](https://github.com/anthony-robin/Ribbonit/pull/17) ([anthony-robin](https://github.com/anthony-robin))
 - ADD 'git\_branch' option [\#14](https://github.com/anthony-robin/Ribbonit/pull/14) ([anthony-robin](https://github.com/anthony-robin))
 - ADD 'sticky' option [\#13](https://github.com/anthony-robin/Ribbonit/pull/13) ([anthony-robin](https://github.com/anthony-robin))
 - USE Array for infos [\#12](https://github.com/anthony-robin/Ribbonit/pull/12) ([anthony-robin](https://github.com/anthony-robin))
@@ -21,6 +24,7 @@
 **Closed issues:**
 
 - ADD 'git\_branch' option to Ribbon displayed informations [\#16](https://github.com/anthony-robin/Ribbonit/issues/16)
+- CREATE a 'CHANGELOG' file [\#11](https://github.com/anthony-robin/Ribbonit/issues/11)
 - ADD 'sticky' option to Ribbon configuration [\#10](https://github.com/anthony-robin/Ribbonit/issues/10)
 
 ## [v0.1.0](https://github.com/anthony-robin/Ribbonit/tree/v0.1.0) (2017-05-21)
