@@ -2,8 +2,8 @@
 
 <% if Rails.env.development? || Rails.env.send("#{config.staging_name}?") %>
 
-<div id="ribbon" class="ribbon <%= config.position %> <%= config.hide_for_small ? 'hide-for-small' : '' %> <%= config.sticky ? 'sticky' : '' %> line-<%= line_count %>">
-  <div class="ribbon-container <%= config.themes[Rails.env.to_sym] %>">
+<div id="ribbon" class="ribbon ribbon--<%= config.position %> <%= config.hide_for_small ? 'ribbon--hide-for-small' : '' %> <%= config.sticky ? 'ribbon--sticky' : '' %> ribbon--<%= line_count %>-lines">
+  <div class="ribbon__container ribbon__container--<%= config.themes[Rails.env.to_sym] %>">
     <% if config.root_link %>
       <%= link_to root_url do %>
         <%= render '/lines', config: config %>

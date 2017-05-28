@@ -1,8 +1,9 @@
 $ribbon_width: 165px
 $ribbon_height: 165px
 
-$top: 36px
-$left: -60px
+$top: 33px
+$left: -66px
+$offset: -5px
 
 .ribbon
   position: absolute
@@ -17,58 +18,8 @@ $left: -60px
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
   line-height: 1rem
 
-  // Sticky
-  &.sticky
-    position: fixed
-
-  // Position
-  &.top-right
-    right: 0
-    left: inherit
-    .ribbon-container
-      right: $left
-      left: inherit
-      transform: rotate(45deg)
-
-  &.bottom-left
-    top: inherit
-    bottom: 0
-    .ribbon-container
-      top: inherit
-      bottom: $top
-      transform: rotate(45deg)
-
-  &.bottom-right
-    top: inherit
-    right: 0
-    bottom: 0
-    left: inherit
-    .ribbon-container
-      top: inherit
-      right: $left
-      bottom: $top
-      left: inherit
-      transform: rotate(-45deg)
-
-  // Ribbon size depending of displayed options
-  &.line-3
-    width: $ribbon_width + 15px
-    height: $ribbon_height + 15px
-    &.top-left
-      top: -5px
-      left: -5px
-    &.top-right
-      top: -5px
-      right: -5px
-    &.bottom-left
-      bottom: -5px
-      left: -5px
-    &.bottom-right
-      right: - 5px
-      bottom: - 5px
-
   // Container
-  .ribbon-container
+  &__container
     position: absolute
     top: $top
     left: $left
@@ -83,7 +34,7 @@ $left: -60px
     transform: rotate(-45deg)
     a
       display: block
-      color: #FFF
+      color: inherit
       text-decoration: none
 
     &::before, &::after
@@ -101,33 +52,84 @@ $left: -60px
       bottom: 1px
 
     // Colors
-    &.orange
+    &--orange
       background: #f80
-    &.blue
+    &--blue
       background: #49a
-    &.green
+    &--green
       background: #090
-    &.red
+    &--red
       background: #a00
-    &.purple
+    &--purple
       background: #551a8b
-    &.black
+    &--black
       background: #333
-    &.white
+    &--white
       background: #fff
       color: #333
       a
         color: #333
 
     // Displayed informations
-    .env
+    &__environment
       display: block
       text-transform: uppercase
 
-    .version, .git
+    &__version, &__git
       display: block
       font-size: 11px
 
+  // Sticky
+  &--sticky
+    position: fixed
+
+  // Position
+  &--top-right
+    right: 0
+    left: inherit
+    .ribbon__container
+      right: $left
+      left: inherit
+      transform: rotate(45deg)
+
+  &--bottom-left
+    top: inherit
+    bottom: 0
+    .ribbon__container
+      top: inherit
+      bottom: $top
+      transform: rotate(45deg)
+
+  &--bottom-right
+    top: inherit
+    right: 0
+    bottom: 0
+    left: inherit
+    .ribbon__container
+      top: inherit
+      right: $left
+      bottom: $top
+      left: inherit
+      transform: rotate(-45deg)
+
+  // Ribbon size depending of displayed options
+  &--3-lines
+    width: $ribbon_width + 15px
+    height: $ribbon_height + 15px
+    &--top-left
+      top: $offset
+      left: $offset
+    &--top-right
+      top: $offset
+      right: $offset
+    &--bottom-left
+      bottom: $offset
+      left: $offset
+    &--bottom-right
+      right: $offset
+      bottom: $offset
+
 @media only screen and (max-width: 40em)
-  .ribbon.hide-for-small
-    display: none
+  .ribbon
+    &--hide-for-small
+      display: none

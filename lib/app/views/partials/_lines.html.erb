@@ -1,6 +1,6 @@
-<span class="env"><%= Rails.env.capitalize %></span>
+<span class="ribbon__container__environment"><%= Rails.env.capitalize %></span>
 
-<span class="version">
+<span class="ribbon__container__version">
   <% if config.infos_to_display.include?(:rails_version) %>
     Rails: <strong><%= Rails.version %></strong>
   <% end %>
@@ -11,7 +11,7 @@
 </span>
 
 <% if config.infos_to_display.include?(:git_branch) && Rails.env.development? %>
-  <span class="git">
+  <span class="ribbon__container__git">
     Branch: <strong><%= branch_name %></strong>
   </span>
 <% end %>
