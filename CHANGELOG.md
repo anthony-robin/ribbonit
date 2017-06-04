@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.2.1](https://github.com/anthony-robin/Ribbonit/tree/v0.2.1) (2017-06-04)
+[Full Changelog](https://github.com/anthony-robin/Ribbonit/compare/v0.2.0...v0.2.1)
+
+**Fixed bugs:**
+
+- FIX broken CSS [\#21](https://github.com/anthony-robin/Ribbonit/pull/21) ([anthony-robin](https://github.com/anthony-robin))
+
 ## [v0.2.0](https://github.com/anthony-robin/Ribbonit/tree/v0.2.0) (2017-05-28)
 [Full Changelog](https://github.com/anthony-robin/Ribbonit/compare/v0.1.0...v0.2.0)
 
