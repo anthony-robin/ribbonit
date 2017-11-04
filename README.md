@@ -57,27 +57,28 @@ You can customize some options through the initializer. Here are the defaults op
 
 ```ruby
 # config/initializers/ribbonit.rb
+Ribbonit.configure do |config|
+  # rails_version: Version of Ruby on Rails
+  # ruby_version: Version of Ruby
+  # git_branch: Current git branch (only displayed in development)
+  config.infos_to_display = %i[rails_version ruby_version git_branch]
 
-# rails_version: Version of Ruby on Rails
-# ruby_version: Version of Ruby
-# git_branch: Current git branch (only displayed in development)
-config.infos_to_display = %i[rails_version ruby_version git_branch]
+  config.root_link = false # Wrap ribbon with root_url link ?
 
-config.root_link = false # Wrap ribbon with root_url link ?
+  config.hide_for_small = true # Display ribbon in small devices ?
+  config.position = 'top-left' # top-right, bottom-left, bottom-right
+  config.sticky = true # stick to page corner ?
 
-hide_for_small = true # Display ribbon in small devices ?
-position = 'top-left' # top-right, bottom-left, bottom-right
-sticky = true # stick to page corner ?
+  # Available colors:
+  # orange, blue, green, red, purple, black, white
+  config.themes = {
+    development: 'black',
+    staging: 'blue'
+  }
 
-# Available colors:
-# orange, blue, green, red, purple, black, white
-themes = {
-  development: 'black',
-  staging: 'blue'
-}
-
-# Sometimes, people use another name for this environment
-staging_name = 'staging'
+  # Sometimes, people use another name for this environment
+  config.staging_name = 'staging'
+end
 ```
 
 ## Screenshots
