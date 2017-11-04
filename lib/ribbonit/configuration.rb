@@ -25,6 +25,5 @@ module Ribbonit
         staging: 'blue'
       }
     end
-    config_accessor(:staging_name) { 'staging' }
   end
 end
