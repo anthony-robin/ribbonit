@@ -1,4 +1,12 @@
-inherit_from: https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop.yml
+inherit_from:
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-bundler.yml
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-layout.yml
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-lint.yml
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-naming.yml
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-performance.yml
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-style.yml
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-rails.yml
 
 AllCops:
+  DisabledByDefault: true
   TargetRubyVersion: 2.4
