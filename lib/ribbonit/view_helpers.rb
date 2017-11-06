@@ -12,7 +12,7 @@ module Ribbonit
       height = 1
       items = Ribbonit.configuration.infos_to_display
       height += 1 if items.include?(:ruby_version) || items.include?(:rails_version)
-      height += 1 if items.include?(:git_branch) && Rails.env.development?
+      height += 1 if items.include?(:git_branch)
       height
     end
   end

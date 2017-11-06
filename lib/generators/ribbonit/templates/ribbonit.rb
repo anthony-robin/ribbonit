@@ -42,9 +42,4 @@ Ribbonit.configure do |config|
     development: 'black',
     staging: 'blue'
   }
-
-  ###
-  # Environment name
-  #
-  config.staging_name = 'staging'
 end

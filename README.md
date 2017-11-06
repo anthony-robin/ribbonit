@@ -53,7 +53,7 @@ body
 ```
 
 ## Options
-You can customize some options through the initializer. Here are the defaults options:
+You can customize some options through the initializer. Here are the default ones:
 
 ```ruby
 # config/initializers/ribbonit.rb
@@ -73,13 +73,13 @@ Ribbonit.configure do |config|
   # orange, blue, green, red, purple, black, white
   config.themes = {
     development: 'black',
-    staging: 'blue'
+    staging: 'blue',
+    my_custom_environment: 'purple'
   }
-
-  # Sometimes, people use another name for this environment
-  config.staging_name = 'staging'
 end
 ```
+
+To add a custom environment, just add it inside the `themes` option and set the color you want (careful, if you define `config.themes` in your initializer it will erase default environments values so you will have to readd them).
 
 ## Screenshots
 ### Colors

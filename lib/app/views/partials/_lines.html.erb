@@ -10,7 +10,7 @@
   <% end %>
 </span>
 
-<% if config.infos_to_display.include?(:git_branch) && Rails.env.development? %>
+<% if config.infos_to_display.include?(:git_branch) %>
   <span class="ribbon__container__git">
     Branch: <strong><%= branch_name %></strong>
   </span>
