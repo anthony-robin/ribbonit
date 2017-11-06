@@ -1,5 +1,17 @@
 # Change Log
 
+## [v0.3.0](https://github.com/anthony-robin/Ribbonit/tree/v0.3.0) (2017-11-06)
+[Full Changelog](https://github.com/anthony-robin/Ribbonit/compare/v0.2.1...v0.3.0)
+
+**Implemented enhancements:**
+
+- REFACTOR way to define environments to apply [\#25](https://github.com/anthony-robin/Ribbonit/pull/25) ([anthony-robin](https://github.com/anthony-robin))
+- UPDATE Rubocop sources [\#24](https://github.com/anthony-robin/Ribbonit/pull/24) ([anthony-robin](https://github.com/anthony-robin))
+
+**Merged pull requests:**
+
+- CLEAN documentation options [\#26](https://github.com/anthony-robin/Ribbonit/pull/26) ([anthony-robin](https://github.com/anthony-robin))
+
 ## [v0.2.1](https://github.com/anthony-robin/Ribbonit/tree/v0.2.1) (2017-06-04)
 [Full Changelog](https://github.com/anthony-robin/Ribbonit/compare/v0.2.0...v0.2.1)
 
