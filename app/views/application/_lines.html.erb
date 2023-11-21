@@ -15,3 +15,9 @@
     Branch: <strong><%= branch_name %></strong>
   </span>
 <% end %>
+
+<% if config.extra_content.present? %>
+  <span class="ribbon__container__extra">
+    <%= config.extra_content %>
+  </span>
+<% end %>

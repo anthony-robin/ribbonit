@@ -155,29 +155,46 @@
   transform: rotate(-45deg);
 }
 
+/* 3 lines */
+
 .ribbon--3-lines {
   width: calc(var(--ribbon-width) + 15px);
   height: calc(var(--ribbon-height) + 15px);
 }
 
-.ribbon--3-lines--top-left {
+.ribbon--3-lines.ribbon--top-left,
+.ribbon--4-lines.ribbon--top-left {
   top: var(--ribbon-offset);
   left: var(--ribbon-offset);
 }
 
-.ribbon--3-lines--top-right {
+.ribbon--3-lines.ribbon--top-right,
+.ribbon--4-lines.ribbon--top-right {
   top: var(--ribbon-offset);
   right: var(--ribbon-offset);
 }
 
-.ribbon--3-lines--bottom-left {
+.ribbon--3-lines.ribbon--bottom-left,
+.ribbon--4-lines.ribbon--bottom-left {
   bottom: var(--ribbon-offset);
   left: var(--ribbon-offset);
 }
 
-.ribbon--3-lines--bottom-right {
+.ribbon--3-lines.ribbon--bottom-right,
+.ribbon--4-lines.ribbon--bottom-right {
   right: var(--ribbon-offset);
   bottom: var(--ribbon-offset);
+}
+
+/* 4 lines */
+
+.ribbon--4-lines {
+  width: calc(var(--ribbon-width) + 30px);
+  height: calc(var(--ribbon-height) + 30px);
+}
+
+.ribbon--4-lines .ribbon__container {
+  width: 280px;
 }
 
 @media only screen and (max-width: 40em) {

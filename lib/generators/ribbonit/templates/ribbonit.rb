@@ -10,6 +10,11 @@ Ribbonit.configure do |config|
   config.infos_to_display = %i[rails_version ruby_version git_branch]
 
   ###
+  # Extra content to add at the end
+  #
+  config.extra_content = nil
+
+  ###
   # Wrap ribbon with link that goes to root_url ?
   #
   config.root_link = false
