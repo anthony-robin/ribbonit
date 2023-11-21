@@ -1,7 +1,7 @@
 module Ribbonit
   module ViewHelpers
     def ribbonit
-      render '/ribbon'
+      render 'ribbon'
     end
 
     def branch_name

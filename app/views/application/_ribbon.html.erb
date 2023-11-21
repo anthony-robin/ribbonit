@@ -6,10 +6,10 @@
   <div class="ribbon__container ribbon__container--<%= config.themes[Rails.env.to_sym] %>">
     <% if config.root_link %>
       <%= link_to root_url do %>
-        <%= render '/lines', config: config %>
+        <%= render 'lines', config: config %>
       <% end %>
     <% else %>
-      <%= render '/lines', config: config %>
+      <%= render 'lines', config: config %>
     <% end %>
   </div>
 </div>

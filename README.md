@@ -39,9 +39,12 @@ $ bin/rails g ribbonit:install
 This will create a `ribbonit.rb` file in `config/initializers`
 
 2) Import assets
-```sass
-// application.sass
-@import ribbon
+```css
+/* application.css */
+
+/*
+*= require ribbon
+*/
 ```
 
 3) Call ribbon in layout
