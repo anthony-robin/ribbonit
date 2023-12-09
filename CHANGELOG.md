@@ -1,59 +1,88 @@
-# Change Log
+# Changelog
 
-## [v0.3.0](https://github.com/anthony-robin/Ribbonit/tree/v0.3.0) (2017-11-06)
-[Full Changelog](https://github.com/anthony-robin/Ribbonit/compare/v0.2.1...v0.3.0)
+## [Unreleased](https://github.com/anthony-robin/ribbonit/tree/HEAD)
 
-**Implemented enhancements:**
-
-- REFACTOR way to define environments to apply [\#25](https://github.com/anthony-robin/Ribbonit/pull/25) ([anthony-robin](https://github.com/anthony-robin))
-- UPDATE Rubocop sources [\#24](https://github.com/anthony-robin/Ribbonit/pull/24) ([anthony-robin](https://github.com/anthony-robin))
-
-**Merged pull requests:**
-
-- CLEAN documentation options [\#26](https://github.com/anthony-robin/Ribbonit/pull/26) ([anthony-robin](https://github.com/anthony-robin))
-
-## [v0.2.1](https://github.com/anthony-robin/Ribbonit/tree/v0.2.1) (2017-06-04)
-[Full Changelog](https://github.com/anthony-robin/Ribbonit/compare/v0.2.0...v0.2.1)
-
-**Fixed bugs:**
-
-- FIX broken CSS [\#21](https://github.com/anthony-robin/Ribbonit/pull/21) ([anthony-robin](https://github.com/anthony-robin))
-
-## [v0.2.0](https://github.com/anthony-robin/Ribbonit/tree/v0.2.0) (2017-05-28)
-[Full Changelog](https://github.com/anthony-robin/Ribbonit/compare/v0.1.0...v0.2.0)
-
-**Implemented enhancements:**
-
-- REFACTOR style using BEM syntax [\#19](https://github.com/anthony-robin/Ribbonit/pull/19) ([anthony-robin](https://github.com/anthony-robin))
-- ADD 'root\_link' option that wraps ribbon [\#18](https://github.com/anthony-robin/Ribbonit/pull/18) ([anthony-robin](https://github.com/anthony-robin))
-- ADD Changelog file [\#17](https://github.com/anthony-robin/Ribbonit/pull/17) ([anthony-robin](https://github.com/anthony-robin))
-- ADD 'git\_branch' option [\#14](https://github.com/anthony-robin/Ribbonit/pull/14) ([anthony-robin](https://github.com/anthony-robin))
-- ADD 'sticky' option [\#13](https://github.com/anthony-robin/Ribbonit/pull/13) ([anthony-robin](https://github.com/anthony-robin))
-- USE Array for infos [\#12](https://github.com/anthony-robin/Ribbonit/pull/12) ([anthony-robin](https://github.com/anthony-robin))
-- REPLACE 'minitest' by 'rspec' [\#8](https://github.com/anthony-robin/Ribbonit/pull/8) ([anthony-robin](https://github.com/anthony-robin))
-- ADD Codacy badges [\#5](https://github.com/anthony-robin/Ribbonit/pull/5) ([anthony-robin](https://github.com/anthony-robin))
-- ADD Gemnasium badge [\#4](https://github.com/anthony-robin/Ribbonit/pull/4) ([anthony-robin](https://github.com/anthony-robin))
-- ADD badge displaying 'gem' version [\#3](https://github.com/anthony-robin/Ribbonit/pull/3) ([anthony-robin](https://github.com/anthony-robin))
-
-**Fixed bugs:**
-
-- RUN specs with Travis [\#7](https://github.com/anthony-robin/Ribbonit/pull/7) ([anthony-robin](https://github.com/anthony-robin))
+[Full Changelog](https://github.com/anthony-robin/ribbonit/compare/v1.0.0...HEAD)
 
 **Closed issues:**
 
-- ADD 'git\_branch' option to Ribbon displayed informations [\#16](https://github.com/anthony-robin/Ribbonit/issues/16)
-- CREATE a 'CHANGELOG' file [\#11](https://github.com/anthony-robin/Ribbonit/issues/11)
-- ADD 'sticky' option to Ribbon configuration [\#10](https://github.com/anthony-robin/Ribbonit/issues/10)
+- +YJIT [\#27](https://github.com/anthony-robin/ribbonit/issues/27)
+- config for production [\#22](https://github.com/anthony-robin/ribbonit/issues/22)
 
-## [v0.1.0](https://github.com/anthony-robin/Ribbonit/tree/v0.1.0) (2017-05-21)
+## [v1.0.0](https://github.com/anthony-robin/ribbonit/tree/v1.0.0) (2023-12-09)
+
+[Full Changelog](https://github.com/anthony-robin/ribbonit/compare/v0.3.0...v1.0.0)
+
 **Implemented enhancements:**
 
-- UPDATE travis instructions, FIX rubocop offenses [\#1](https://github.com/anthony-robin/Ribbonit/pull/1) ([anthony-robin](https://github.com/anthony-robin))
+- USE `I18n` files to store hardcoded texts [\#9](https://github.com/anthony-robin/ribbonit/issues/9)
+- Add `extra_content` configuration option [\#28](https://github.com/anthony-robin/ribbonit/pull/28) ([anthony-robin](https://github.com/anthony-robin))
+
+**Closed issues:**
+
+- ADD option to display 'server' name [\#20](https://github.com/anthony-robin/ribbonit/issues/20)
+- ADD specs [\#15](https://github.com/anthony-robin/ribbonit/issues/15)
+
+## [v0.3.0](https://github.com/anthony-robin/ribbonit/tree/v0.3.0) (2017-11-06)
+
+[Full Changelog](https://github.com/anthony-robin/ribbonit/compare/v0.2.1...v0.3.0)
+
+**Implemented enhancements:**
+
+- REFACTOR way to define environments to apply [\#25](https://github.com/anthony-robin/ribbonit/pull/25) ([anthony-robin](https://github.com/anthony-robin))
+- UPDATE Rubocop sources [\#24](https://github.com/anthony-robin/ribbonit/pull/24) ([anthony-robin](https://github.com/anthony-robin))
+
+**Merged pull requests:**
+
+- CLEAN documentation options [\#26](https://github.com/anthony-robin/ribbonit/pull/26) ([anthony-robin](https://github.com/anthony-robin))
+
+## [v0.2.1](https://github.com/anthony-robin/ribbonit/tree/v0.2.1) (2017-06-04)
+
+[Full Changelog](https://github.com/anthony-robin/ribbonit/compare/v0.2.0...v0.2.1)
 
 **Fixed bugs:**
 
-- ADD 'line-height' css property [\#2](https://github.com/anthony-robin/Ribbonit/pull/2) ([anthony-robin](https://github.com/anthony-robin))
+- FIX broken CSS [\#21](https://github.com/anthony-robin/ribbonit/pull/21) ([anthony-robin](https://github.com/anthony-robin))
+
+## [v0.2.0](https://github.com/anthony-robin/ribbonit/tree/v0.2.0) (2017-05-28)
+
+[Full Changelog](https://github.com/anthony-robin/ribbonit/compare/v0.1.0...v0.2.0)
+
+**Implemented enhancements:**
+
+- REFACTOR style using BEM syntax [\#19](https://github.com/anthony-robin/ribbonit/pull/19) ([anthony-robin](https://github.com/anthony-robin))
+- ADD 'root\_link' option that wraps ribbon [\#18](https://github.com/anthony-robin/ribbonit/pull/18) ([anthony-robin](https://github.com/anthony-robin))
+- ADD Changelog file [\#17](https://github.com/anthony-robin/ribbonit/pull/17) ([anthony-robin](https://github.com/anthony-robin))
+- ADD 'git\_branch' option [\#14](https://github.com/anthony-robin/ribbonit/pull/14) ([anthony-robin](https://github.com/anthony-robin))
+- ADD 'sticky' option [\#13](https://github.com/anthony-robin/ribbonit/pull/13) ([anthony-robin](https://github.com/anthony-robin))
+- USE Array for infos [\#12](https://github.com/anthony-robin/ribbonit/pull/12) ([anthony-robin](https://github.com/anthony-robin))
+- REPLACE 'minitest' by 'rspec' [\#8](https://github.com/anthony-robin/ribbonit/pull/8) ([anthony-robin](https://github.com/anthony-robin))
+- ADD Codacy badges [\#5](https://github.com/anthony-robin/ribbonit/pull/5) ([anthony-robin](https://github.com/anthony-robin))
+- ADD Gemnasium badge [\#4](https://github.com/anthony-robin/ribbonit/pull/4) ([anthony-robin](https://github.com/anthony-robin))
+- ADD badge displaying 'gem' version [\#3](https://github.com/anthony-robin/ribbonit/pull/3) ([anthony-robin](https://github.com/anthony-robin))
+
+**Fixed bugs:**
+
+- RUN specs with Travis [\#7](https://github.com/anthony-robin/ribbonit/pull/7) ([anthony-robin](https://github.com/anthony-robin))
+
+**Closed issues:**
+
+- ADD 'git\_branch' option to Ribbon displayed informations [\#16](https://github.com/anthony-robin/ribbonit/issues/16)
+- CREATE a 'CHANGELOG' file [\#11](https://github.com/anthony-robin/ribbonit/issues/11)
+- ADD 'sticky' option to Ribbon configuration [\#10](https://github.com/anthony-robin/ribbonit/issues/10)
+
+## [v0.1.0](https://github.com/anthony-robin/ribbonit/tree/v0.1.0) (2017-05-21)
+
+[Full Changelog](https://github.com/anthony-robin/ribbonit/compare/d88c4473e5d90902326a4ddbc398237872ee4462...v0.1.0)
+
+**Implemented enhancements:**
+
+- UPDATE travis instructions, FIX rubocop offenses [\#1](https://github.com/anthony-robin/ribbonit/pull/1) ([anthony-robin](https://github.com/anthony-robin))
+
+**Fixed bugs:**
+
+- ADD 'line-height' css property [\#2](https://github.com/anthony-robin/ribbonit/pull/2) ([anthony-robin](https://github.com/anthony-robin))
 
 
 
-\* *This Change Log was automatically generated by [github_changelog_generator](https://github.com/skywinder/Github-Changelog-Generator)*
+\* *This Changelog was automatically generated by [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator)*
