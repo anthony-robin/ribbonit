@@ -66,6 +66,9 @@ Ribbonit.configure do |config|
   # git_branch: Current git branch (only displayed in development)
   config.infos_to_display = %i[rails_version ruby_version git_branch]
 
+  # additional extra content to display at the bottom of ribbon
+  config.extra_content = nil # 'Foo bar'
+
   config.root_link = false # Wrap ribbon with root_url link ?
 
   config.hide_for_small = true # Display ribbon in small devices ?
