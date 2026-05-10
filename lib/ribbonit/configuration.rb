@@ -1,8 +1,8 @@
-require 'active_support/configurable'
+require 'active_support/core_ext/class/attribute'
 
 module Ribbonit
   def self.configuration
-    @configuration ||= Ribbonit::Configuration.new
+    @configuration ||= Configuration
   end
 
   def self.configure
@@ -10,21 +10,20 @@ module Ribbonit
   end
 
   class Configuration
-    include ActiveSupport::Configurable
+    class_attribute :infos_to_display, default: %i[
+      rails_version
+      ruby_version
+    ]
 
-    config_accessor(:infos_to_display) do
-      %i[rails_version ruby_version]
-    end
-    config_accessor(:extra_content) { nil }
-    config_accessor(:root_link) { false }
-    config_accessor(:hide_for_small) { true }
-    config_accessor(:position) { 'top-left' }
-    config_accessor(:sticky) { true }
-    config_accessor(:themes) do
-      {
-        development: 'black',
-        staging: 'blue'
-      }
-    end
+    class_attribute :extra_content, default: nil
+    class_attribute :root_link, default: false
+    class_attribute :hide_for_small, default: true
+    class_attribute :position, default: 'top-left'
+    class_attribute :sticky, default: true
+
+    class_attribute :themes, default: {
+      development: 'black',
+      staging: 'blue'
+    }
   end
 end
