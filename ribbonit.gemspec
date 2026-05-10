@@ -1,5 +1,4 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'ribbonit/version'
 
@@ -18,12 +17,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'rails'
+  spec.required_ruby_version = '>= 2.7'
+  spec.add_dependency 'rails', '>= 5.2'
 
-  spec.add_development_dependency 'bundler', '>= 2.2.33'
-  spec.add_development_dependency 'rake', '~> 12.0'
-  spec.add_development_dependency 'rspec', '~> 3.6'
-  spec.add_development_dependency 'byebug'
-  spec.add_development_dependency 'rubocop'
-  spec.add_development_dependency 'simplecov'
+  spec.metadata['rubygems_mfa_required'] = 'true'
 end
